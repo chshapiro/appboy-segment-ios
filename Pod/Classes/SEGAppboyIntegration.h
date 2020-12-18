@@ -3,6 +3,8 @@
 #import <Segment/SEGIntegration.h>
 #elif __has_include(<Analytics/SEGIntegration.h>)
 #import <Analytics/SEGIntegration.h>
+#elif SWIFT_PACKAGE
+#import "SEGIntegration.h"
 #endif
 
 @interface SEGAppboyIntegration : NSObject<SEGIntegration>
