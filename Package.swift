@@ -22,11 +22,9 @@ let package = Package(
           .product(name: "Segment", package: "Segment"),
           .product(name: "AppboyUI", package: "Appboy_iOS_SDK"),
       ],
-      path: "Pod",
-      sources: ["Classes"],
-      publicHeadersPath: "Classes",
+      publicHeadersPath: "Full-SDK",
       cSettings: [
-        .headerSearchPath("Classes")
+        .headerSearchPath("Full-SDK")
       ]
     ),
     .target(
@@ -35,11 +33,9 @@ let package = Package(
           .product(name: "Segment", package: "Segment"),
           .product(name: "AppboyKit", package: "Appboy_iOS_SDK"),
       ],
-      path: "Pod",
-      sources: ["Classes"],
-      publicHeadersPath: "Classes",
+      publicHeadersPath: "Core",
       cSettings: [
-        .headerSearchPath("Classes")
+        .headerSearchPath("Core")
       ]
     )
   ]
