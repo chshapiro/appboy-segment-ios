@@ -3,7 +3,7 @@
 #import <Segment/SEGIntegration.h>
 #elif __has_include(<Analytics/SEGIntegration.h>)
 #import <Analytics/SEGIntegration.h>
-#elif SWIFT_PACKAGE
+#elif __has_include("SEGIntegration.h")
 #import "SEGIntegration.h"
 #endif
 
