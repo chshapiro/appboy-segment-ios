@@ -3,8 +3,6 @@
 #import <Segment/SEGIntegrationFactory.h>
 #elif __has_include(<Analytics/SEGIntegration.h>)
 #import <Analytics/SEGIntegrationFactory.h>
-#elif SWIFT_PACKAGE
-#import "SEGIntegrationFactory.h"
 #endif
 #import "SEGAppboyHelper.h"
 #import "SEGAppboyIntegration.h"
